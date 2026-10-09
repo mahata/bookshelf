@@ -130,7 +130,7 @@ module chamfered_box(size, c) {
   }
 }
 
-// 面 (z = 0) から +z 方向に掘るダボ穴。lead は入口の面取りで、象の足と差し込みに備える
+// 面 (z = 0) から +z 方向に掘るダボ穴。lead は入口の面取りで、エレファントフットを逃がし差し込みやすくする
 module pin_hole(depth, d = pin_d, lead = 0) {
   translate([0, 0, -eps]) {
     cylinder(d = d, h = depth + eps);
